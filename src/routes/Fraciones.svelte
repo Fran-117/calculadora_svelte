@@ -7,6 +7,8 @@
 	let c= null
 	let d= null
 
+	let Resultado=null
+
 </script>
 
 <div class="Fracciones">
@@ -20,12 +22,12 @@
 			<tbody>
 				<tr>
 					<td class="table primary">
-						<input type="number" placeholder="numerador" bind:value={a} />
+						<input type="number" placeholder="Numerador" bind:value={a} />
 					</td>
 				</tr>
 				<tr>
 					<td class="table secondary">
-						<input type="number" placeholder="denominador" bind:value={b} />
+						<input type="number" placeholder="Denominador" bind:value={b} />
 					</td>
 				</tr>
 			</tbody>
@@ -42,17 +44,25 @@
 			<tbody>
 				<tr>
 					<td class="table primary">
-						<input type="number" placeholder="numerador" bind:value={c} />
+						<input type="number" placeholder="Numerador" bind:value={c} />
 					</td>
 				</tr>
 				<tr>
 					<td class="table secondary">
-						<input type="number" placeholder="denominador" bind:value={d} />
+						<input type="number" placeholder="Denominador" bind:value={d} />
 					</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
+</div>
+
+<div class="Operaciones">
+	<h1>RESULTADO: {Resultado}</h1>
+	<button on:click={()=>Resultado=sumar(a,b,c,d)}>SUMAR</button>
+	<button on:click={()=>Resultado=restar(a,b,c,d)}>RESTAR</button>
+	<button on:click={()=>Resultado=multiplicar(a,b,c,d)}>MULTIPLICAR</button>
+	<button on:click={()=>Resultado=dividir(a,b,c,d)}>DIVIDIR</button>
 </div>
 
 <style>
