@@ -23,7 +23,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
+		<a href="https://github.com/Fran-117/proyecto_svelt_bootstrap">
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>
