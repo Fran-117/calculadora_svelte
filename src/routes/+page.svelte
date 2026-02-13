@@ -1,5 +1,5 @@
 <script>
-	import Counter from './Counter.svelte';
+    import Fraciones from './Fraciones.svelte';
 </script>
 
 <svelte:head>
@@ -10,7 +10,7 @@
 <section>
 	<h1>Bienvenido, escribe unos numeros y selecciona una operación</h1>
 
-	<Counter />
+	<Fraciones />
 </section>
 
 <style>
